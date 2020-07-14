@@ -1,7 +1,7 @@
 $(document).ready(function() {
   const $tweetText = ('#tweet-text');
   
-  $($tweetText).on('keydown', function(event) {
+  $($tweetText).on('keypress', function(event) {
     // length of input text
     const charLength = $(this).val().length;
 
