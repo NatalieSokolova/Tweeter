@@ -13,7 +13,18 @@ span {
 }
 
 .header-msg {
+  display: flex;
+  flex-direction: column;
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 75%;
   margin: 1.5em;
+}
+
+.arrow {
+  margin-top: .5em;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20px;
+  height:20px;
 }
