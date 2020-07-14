@@ -32,3 +32,8 @@ span {
   height:20px;
   color: black;
 }
+
+/* turns counter red, after character count exceeds 140 */
+.red {
+  color: red;
+}

@@ -27,6 +27,18 @@
 
     <!-- App JS -->
     <script type="text/javascript" src="/scripts/client.js"></script>
+
+    <!-- jQuery -->
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- character count modifier -->
+    <script src="./scripts/composer-char-counter.js"></script>
+  
+
   </head>
 
   <body>
@@ -57,18 +69,44 @@
         <!-- <h2>Compose Tweet</h2> -->
         <form action="/tweets/" method="POST">
           <!-- form input field and border-bottom -->
-          <div class="top-content">
+          <section class="top-content">
           <label for="tweet-text">What are you humming about?</label>
           <textarea name="text" id="tweet-text"></textarea>
-          </div>
+          </section>
           <!-- /* button and count */ -->
-          <div class="bottom-content">
+          <section class="bottom-content">
             <button type="submit">Tweet</button>
             <output name="counter" class="counter" for="tweet-text">140</output>
-          </div>
+          </section>
         </form>
       </section>
     </main>
-    <script src="./composer-char-counter.js"></script>
-  </body>
+    </body>
 </html>
+
+
+
+<!-- <main class="container">
+
+  <section class="new-tweet">
+
+    <section class="tweet-form">
+    <h2>Compose Tweet</h2>
+    <form method="post" action="/tweets">
+      <label for="tweet-text">What are you humming about?
+      </label>
+      <textarea name="text" id="tweet-text"></textarea>
+
+      
+      <div>
+
+        <section class="tweet-form-footer">
+        <button type="submit">Tweet</button>
+        <output name="counter" class="counter" for="tweet-text">140</output>
+      </div>
+      </section>
+    </form>
+    </section>
+  </section>
+
+</main> -->
