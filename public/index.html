@@ -38,7 +38,9 @@
 
     <!-- character count modifier -->
     <script src="./scripts/composer-char-counter.js"></script>
-  
+
+    <!-- Font Awesome for icons -->
+    <script src="https://use.fontawesome.com/25ec735ff3.js"></script>
 
   </head>
 
@@ -49,7 +51,7 @@
       <span>tweeter</span>
       <span class="header-msg">
         <div><b>Write</b> a new tweet<div></div>
-        <img class="arrow" src="/images/red-arrow.png"> 
+        <i class="fa fa-angle-double-down fa-2x" aria-hidden="true"></i>
       </span>
     </nav>
 
@@ -81,17 +83,25 @@
           </section>
         </form>
 
-        <section id="tweet-container">
+  
           <!-- tweet markup -->
-          <article>
+          <article class="new-tweet-container">
             <header class="tw-header">
-              Etsy drinking. 
+              <div class="user">
+                <div class="icon">Icon</div>
+                <div class="name">Name</div> 
+              </div>
+              <div class="tweet-handle">@Whatever</div> 
             </header>
-            <footer>
+              <p>
               Bicycle rights readymade cred copper mug tumblr narwhal austin cloud bread.
+              </p>
+            <footer>
+              <div class="date">date</div> 
+              <div class="icons">icons</div>
             </footer>
           </article>
-        </section>
+
 
       </section>
     </main>

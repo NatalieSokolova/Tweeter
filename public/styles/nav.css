@@ -17,23 +17,16 @@ span {
 .header-msg {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 75%;
   margin: 1.5em;
 }
 
 /* arrow below the .header-msg */
-.arrow {
-  margin-top: .5em;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 20px;
-  height:20px;
-  color: black;
-}
-
-/* turns counter red, after character count exceeds 140 */
-.red {
+i.fa.fa-angle-double-down.fa-2x {
+  margin-top: .25em;
+  margin-left: 50%;
+  margin-right: 50%;
   color: red;
 }
