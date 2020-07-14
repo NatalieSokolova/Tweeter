@@ -10,6 +10,7 @@ textarea[name="text"] {
   border: none;
   width: 75%;
   margin-left: 15px;
+  outline: none;
 }
 
 button[type="submit"] {
