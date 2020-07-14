@@ -11,6 +11,7 @@ textarea[name="text"] {
   width: 75%;
   margin-left: 15px;
   outline: none;
+  resize:none;
 }
 
 button[type="submit"] {
