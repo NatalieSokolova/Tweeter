@@ -1,0 +1,29 @@
+article.new-tweet-container {
+  border: 4px solid;
+  padding: 12px;
+  margin: 20px 0;
+}
+
+.tw-header {
+  display: flex;
+  flex-direction: row;
+}
+
+.tweet-text {
+  margin: 30px 20px;;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  border-top: 4px solid;
+  justify-content: space-between;
+}
+
+.date {
+  margin: 10px 20px;
+}
+
+.icons {
+  margin: 10px 20px;
+} 
