@@ -1,16 +1,35 @@
-article.new-tweet-container {
+.new-tweet-container {
   border: 4px solid;
   padding: 12px;
   margin: 20px 0;
+  font-size: 24px;
 }
 
 .tw-header {
+  margin: 5px;
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
 }
 
-.tweet-text {
-  margin: 30px 20px;;
+.user {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.name {
+  margin: .5em;
+}
+
+.tweet-handle {
+  margin: .5em;
+  color: rgb(199, 198, 198);
+}
+
+.new-tweet-container p {
+  font-weight: 700;
+  margin: 30px 20px;
 }
 
 footer {
@@ -18,6 +37,7 @@ footer {
   flex-direction: row;
   border-top: 4px solid;
   justify-content: space-between;
+  font-size: 70%;
 }
 
 .date {
