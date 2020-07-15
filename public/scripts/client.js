@@ -5,8 +5,7 @@
  */
 
 // for demo purposes
-const tweets = []
-
+// const tweets = []
 
 const renderTweets = function (tweets) {
   // loops through tweets
@@ -50,9 +49,7 @@ const createTweetElement = (tweet) => {
   return $tweet;
 
 }
-
-
-
+ 
 
 $(document).ready(function () {
   $('form').on('submit', (event) => {
@@ -63,7 +60,15 @@ $(document).ready(function () {
     console.log('form', $('form'))
   
     console.log('input: ', event.currentTarget[0].value)
-  
+
+    //validate before submission
+    const input = event.currentTarget[0].value;
+
+    if (!input) {
+      alert('Sorry, you can not submit an empty tweet!')
+    } else if (input.length > 140) {
+      alert('Oops! Your tweet is too long. Maximum length is 140 characters')
+    }
   
     $.ajax({
       url: `http://localhost:8080/tweets`,
@@ -73,19 +78,10 @@ $(document).ready(function () {
       loadTweets();
     })
   
-  
   })
 
+
   const loadTweets = function() {
-    // $('form').on('submit', (event) => {
-    //   event.preventDefault();
-
-    //   console.log('event: ', event)
-
-    //   console.log('form', $('form'))
-
-    //   console.log('input: ', event.currentTarget[0].value)
-
 
       $.ajax({
         url: `http://localhost:8080/tweets`,
@@ -101,7 +97,7 @@ $(document).ready(function () {
 
   // renderTweets(tweets);
 
-  loadTweets()
+  //loadTweets()
 
   // console.log("READY!!");
 
