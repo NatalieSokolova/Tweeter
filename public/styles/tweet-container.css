@@ -13,13 +13,12 @@ article.new-tweet-container:hover {
 .tweet-handle {
   margin: .5em;
   color: rgb(199, 198, 198);
-  visibility: hidden;
 }
 
-article.new-tweet-container:hover .tweet-handle {
+/* article.new-tweet-container:hover .tweet-handle {
   font-weight: 300;
   visibility: visible;
-}
+} */
 
 .tw-header {
   margin: 5px;
