@@ -76,7 +76,7 @@ $(document).ready(function () {
       data: $('form').serialize(),
     }).then(() => {
       loadTweets();
-    })
+    }).catch((error) => console.log(error));
   
   })
 
