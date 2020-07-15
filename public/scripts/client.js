@@ -4,7 +4,7 @@
  * Reminder: Use (and do all your DOM work in) jQuery's document ready function
  */
 
-
+// for demo purposes
 const tweetObj = {
   "user": {
     "name": "Newton",
@@ -67,5 +67,9 @@ $('.new-tweet-container').append($tweet); // to add it to the page so we can mak
 $(document).ready(function () {
 
   console.log("READY!!");
+
+  // $('form').on('submit', (event) => {
+  //   event.preventDefault();
+  // })
 
 })
