@@ -12,9 +12,12 @@ const renderTweets = function (tweets) {
   // calls createTweetElement for each tweet
   // takes return value and appends it to the tweets container
   $('#results').empty();
-  for (let tweet of tweets) {
-    $('#results').append(createTweetElement(tweet));
-  }
+
+  // for (let tweet of tweets) {
+  //   $('#results').append(createTweetElement(tweet));
+  // }
+
+  tweets.forEach(tweet => $('#results').append(createTweetElement(tweet)))
 }
 
 const createTweetElement = (tweet) => {
@@ -49,16 +52,16 @@ const createTweetElement = (tweet) => {
   return $tweet;
 
 }
- 
+
 
 $(document).ready(function () {
   $('form').on('submit', (event) => {
     event.preventDefault();
-  
+
     console.log('event: ', event)
-  
+
     console.log('form', $('form'))
-  
+
     console.log('input: ', event.currentTarget[0].value)
 
     //validate before submission
@@ -69,34 +72,34 @@ $(document).ready(function () {
     } else if (input.length > 140) {
       alert('Oops! Your tweet is too long. Maximum length is 140 characters')
     } else {
-  
-    $.ajax({
-      url: `http://localhost:8080/tweets`,
-      method: 'POST',
-      data: $('form').serialize(),
-    }).then(() => {
-      loadTweets();
-    }).catch((error) => console.log(error));
-
-
-    $("form").trigger("reset");
-  }
-  })
-  
-
-
-  const loadTweets = function() {
 
       $.ajax({
         url: `http://localhost:8080/tweets`,
-        method: 'GET',
+        method: 'POST',
         data: $('form').serialize(),
-      }).then((response) => {
-        console.log('response: ', response);
-        renderTweets(response);
+      }).then(() => {
+        loadTweets();
       }).catch((error) => console.log(error));
-    // })
-}
+
+
+      $('form').trigger('reset');
+    }
+  })
+
+
+
+  const loadTweets = function () {
+
+    $.ajax({
+      url: `http://localhost:8080/tweets`,
+      method: 'GET',
+      data: $('form').serialize(),
+    }).then((response) => {
+      console.log('response: ', response);
+      renderTweets(response);
+    }).catch((error) => console.log(error));
+
+  }
 
   // renderTweets(tweets);
 
