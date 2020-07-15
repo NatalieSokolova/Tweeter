@@ -1,4 +1,4 @@
-form[action="/tweets/"]{
+form[name="tweets"]{
   display: flex;
   flex-grow: 1;
   flex-direction: column;

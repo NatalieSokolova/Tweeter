@@ -27,6 +27,7 @@ article.new-tweet-container:hover {
   justify-content: space-between;
 }
 
+/* displays user icon and name next to each other */
 .user {
   display: flex;
   flex-direction: row;
@@ -53,6 +54,7 @@ footer {
   margin: 10px 20px;
 }
 
+/* tweeter icons in the bottor right corner */
 .icons {
   margin: 10px 20px;
   color: #4056A1;

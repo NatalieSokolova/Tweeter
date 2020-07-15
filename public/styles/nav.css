@@ -45,7 +45,9 @@ span {
 }
 
 @-webkit-keyframes bounce {
+  /* beginning of animation */
   0%,  
+  /* end of animation */
   100% {
      -webkit-transform: translateY(0);
   } 
