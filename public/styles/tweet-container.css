@@ -5,6 +5,10 @@
   font-size: 24px;
 }
 
+.new-tweet-container:hover {
+  box-shadow: 10px 10px #b3c0e1;
+}
+
 .tw-header {
   margin: 5px;
   display: flex;
