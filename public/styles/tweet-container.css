@@ -1,12 +1,24 @@
-.new-tweet-container {
+article.new-tweet-container {
   border: 4px solid;
   padding: 12px;
   margin: 20px 0;
   font-size: 24px;
 }
 
-.new-tweet-container:hover {
+article.new-tweet-container:hover {
   box-shadow: 10px 10px #b3c0e1;
+  font-weight: 700;
+} 
+
+.tweet-handle {
+  margin: .5em;
+  color: rgb(199, 198, 198);
+  visibility: hidden;
+}
+
+article.new-tweet-container:hover .tweet-handle {
+  font-weight: 300;
+  visibility: visible;
 }
 
 .tw-header {
@@ -26,13 +38,7 @@
   margin: .5em;
 }
 
-.tweet-handle {
-  margin: .5em;
-  color: rgb(199, 198, 198);
-}
-
 .new-tweet-container p {
-  font-weight: 700;
   margin: 30px 20px;
 }
 
