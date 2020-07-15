@@ -13,11 +13,7 @@ const renderTweets = function (tweets) {
   // takes return value and appends it to the tweets container
   $('#results').empty();
 
-  // for (let tweet of tweets) {
-  //   $('#results').append(createTweetElement(tweet));
-  // }
-
-  tweets.forEach(tweet => $('#results').append(createTweetElement(tweet)))
+  tweets.reverse().forEach(tweet => $('#results').append(createTweetElement(tweet)))
 }
 
 const createTweetElement = (tweet) => {
