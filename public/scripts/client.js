@@ -90,8 +90,7 @@ $(document).ready(function () {
       }).then((response) => {
         console.log('response: ', response);
         renderTweets(response);
-
-      })
+      }).catch((error) => console.log(error));
     // })
 }
 
