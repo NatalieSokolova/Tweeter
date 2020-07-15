@@ -44,7 +44,11 @@ const renderTweets = function(tweets) {
 
 const createTweetElement = (tweet) => {
 
-  
+  // const dateReadable = ${tweet.created_at}.toDateString();
+  // console.log(dateReadable)
+  // const dateReadable = (new Date(tweet.created_at)) => {
+
+  // }
 
   let $tweet = `
   <article class="new-tweet-container">
@@ -57,7 +61,7 @@ const createTweetElement = (tweet) => {
   </header>
   <p>${tweet.content.text}</p>
   <footer>
-    <div class="date">${tweet.created_at}</div>
+    <div class="date">${new Date(tweet.created_at)}</div>
     <div class="icons">
       <i class="fa fa-flag" aria-hidden="true"></i>
       <i class="fa fa-retweet" aria-hidden="true"></i>
