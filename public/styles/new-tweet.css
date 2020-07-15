@@ -19,9 +19,10 @@ textarea[name="text"] {
 }
 
 /* overriding placeholder text styles inherited from form input field*/
-/* textarea::placeholder {
+textarea::placeholder {
   font-weight: 700;
-} */
+  font-size: 24px;
+}
 
 button[type="submit"] {
   background-color:  #4056A1;
