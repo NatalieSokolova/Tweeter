@@ -28,6 +28,7 @@ textarea::placeholder {
 
 #tweet-text {
   margin: 15px 0;
+  font-size: 24px;
 }
 
 button[type="submit"] {
