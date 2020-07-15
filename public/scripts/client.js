@@ -68,7 +68,7 @@ $(document).ready(function () {
       alert('Sorry, you can not submit an empty tweet!')
     } else if (input.length > 140) {
       alert('Oops! Your tweet is too long. Maximum length is 140 characters')
-    }
+    } else {
   
     $.ajax({
       url: `http://localhost:8080/tweets`,
@@ -77,8 +77,12 @@ $(document).ready(function () {
     }).then(() => {
       loadTweets();
     }).catch((error) => console.log(error));
-  
+
+
+    $("form").trigger("reset");
+  }
   })
+  
 
 
   const loadTweets = function() {
