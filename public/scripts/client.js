@@ -5,38 +5,14 @@
  */
 
 // for demo purposes
-const tweets = 
-[
-  {
-    "user": {
-      "name": "Newton",
-      "avatars": "https://i.imgur.com/73hZDYK.png"
-      ,
-      "handle": "@SirIsaac"
-    },
-    "content": {
-      "text": "If I have seen further it is by standing on the shoulders of giants"
-    },
-    "created_at": 1461116232227
-  },
-  {
-    "user": {
-      "name": "Descartes",
-      "avatars": "https://i.imgur.com/nlhLi3I.png",
-      "handle": "@rd" },
-    "content": {
-      "text": "Je pense , donc je suis"
-    },
-    "created_at": 1461113959088
-  }
-]
+const tweets = []
 
 
-const renderTweets = function(tweets) {
+const renderTweets = function (tweets) {
   // loops through tweets
   // calls createTweetElement for each tweet
   // takes return value and appends it to the tweets container
-
+  $('#results').empty();
   for (let tweet of tweets) {
     $('#results').append(createTweetElement(tweet));
   }
@@ -78,18 +54,55 @@ const createTweetElement = (tweet) => {
 
 
 
+$(document).ready(function () {
+  $('form').on('submit', (event) => {
+    event.preventDefault();
+  
+    console.log('event: ', event)
+  
+    console.log('form', $('form'))
+  
+    console.log('input: ', event.currentTarget[0].value)
+  
+  
+    $.ajax({
+      url: `http://localhost:8080/tweets`,
+      method: 'POST',
+      data: $('form').serialize(),
+    }).then(() => {
+      loadTweets();
+    })
+  
+  
+  })
+
+  const loadTweets = function() {
+    // $('form').on('submit', (event) => {
+    //   event.preventDefault();
+
+    //   console.log('event: ', event)
+
+    //   console.log('form', $('form'))
+
+    //   console.log('input: ', event.currentTarget[0].value)
 
 
-// const $tweet = createTweetElement(tweetObj);
+      $.ajax({
+        url: `http://localhost:8080/tweets`,
+        method: 'GET',
+        data: $('form').serialize(),
+      }).then((response) => {
+        console.log('response: ', response);
+        renderTweets(response);
 
-// console.log($tweet); // to see what it looks like
-// $('.new-tweet-container').append($tweet); // to add it to the page so we can make sure it's got all the right elements, classes, etc.
+      })
+    // })
+}
 
+  // renderTweets(tweets);
 
-$(document).ready(function() {
+  loadTweets()
 
-  console.log("READY!!");
-
-  renderTweets(tweets);
+  // console.log("READY!!");
 
 })
