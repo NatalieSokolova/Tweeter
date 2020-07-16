@@ -36,9 +36,15 @@ main {
 
 /* appears on scroll and takes you to the top on click and enables text area*/
 button.scrollup-btn {
-  color: red;
+  color: #f4f1ec;
   font-size: 4em;
-  background-color: Transparent;
+  width: 1em;
+  line-height: 1em;
+  border-radius: 50%;
+  background-color: red; 
+
+  text-align: center;
+  /* background-color: Transparent; */
   border: none;
   outline:none;
   cursor: pointer;
@@ -49,10 +55,12 @@ button.scrollup-btn {
 }
 
 button.scrollup-btn:hover {
-  -webkit-animation: bounce 2.5s infinite;
+  animation: bounce 2.5s infinite;
 }
 
-@-webkit-keyframes bounce {
+
+
+@keyframes bounce {
   /* beginning of animation */
   0%,  
   /* end of animation */

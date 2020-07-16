@@ -29,7 +29,7 @@ span {
 }
 
 /* arrow below the .header-msg */
-.nav-btn {
+button.nav-btn {
   margin-top: .25em;
   margin-left: 50%;
   margin-right: 50%;
@@ -40,18 +40,31 @@ span {
   cursor: pointer;
 }
 
-.nav-btn:hover {
-  -webkit-animation: bounce 2.5s infinite;
+button.nav-btn:hover {
+  /* -webkit-animation: bounce 2.5s infinite; */
+  animation: bounce 2.5s infinite;
 }
 
-@-webkit-keyframes bounce {
-  /* beginning of animation */
+/* @-webkit-keyframes bounce {
+  
   0%,  
-  /* end of animation */
+ 
   100% {
      -webkit-transform: translateY(0);
   } 
   50% {
       -webkit-transform: translateY(-12px);
+  }
+} */
+
+@keyframes bounce {
+  
+  0%,  
+
+  100% {
+    transform: translateY(0);
+  } 
+  50% {
+    transform: translateY(-12px);
   }
 }
