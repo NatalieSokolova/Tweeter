@@ -9,6 +9,10 @@ const renderTweets = function (tweets) {
 
 // puts a new tweet in a new-tweet-container
 const createTweetElement = (tweet) => {
+  //date from database
+  let dbDate = tweet.created_at;
+  //relative time using moment.js
+  let readableDate = moment(dbDate).fromNow();
   let $tweet = `
   <article class="new-tweet-container">
   <header class="tw-header">
@@ -20,7 +24,7 @@ const createTweetElement = (tweet) => {
   </header>
   <p>${tweet.content.text}</p>
   <footer>
-    <div class="date">${new Date(tweet.created_at)}</div>
+    <div class="date">${readableDate}</div>
     <div class="icons">
       <i class="fa fa-flag" aria-hidden="true"></i>
       <i class="fa fa-retweet" aria-hidden="true"></i>

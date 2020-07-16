@@ -2,6 +2,9 @@
 <html lang="en">
 
 <head>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <!-- Meta Information -->
   <title>Tweeter - Home Page</title>
   
@@ -45,15 +48,18 @@
   <!-- character count modifier -->
   <script src="./scripts/composer-char-counter.js"></script>
 
+  <!-- Date -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js"></script>
+
 </head>
 
 <body>
   <!-- Top nav bar (fixed) -->
   <nav>
     <!-- logo -->
-    <span>tweeter</span>
+    <span class="logo">tweeter</span>
     <span class="header-msg">
-      <div><b>Write</b> a new tweet<div></div>
+      <div><b>Write</b> a new tweet</div>
         <button class="nav-btn"><i class="fa fa-angle-double-down fa-2x" aria-hidden="true"></i></button>
     </span>
   </nav>
@@ -65,7 +71,7 @@
     </div>
     <br>
     <div class="user-name">
-      <h2>Your Name</h2>
+      <h2><b>Your</b> Name</h2>
     </div>
   </header>
 

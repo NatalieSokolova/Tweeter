@@ -3,17 +3,18 @@ nav {
   display: flex;
   width: 100vw;
   justify-content: space-between;
-  background-color: #4056A1;
+  /* background-color: #4056A1; */
   color: #FFFFFF;
-  height: 15vh;
+  /* height: 15vh; */
   position: fixed;
   top: 0;
-  padding: 2.5em 1.5em;
+  /* padding: 2.5em 1.5em; */
  }
 
 /* Tweeter logo */
-span {
+.logo {
   font-family: 'Bungee', cursive;
+  /* font-size: 1em; */
   /* margin: 1.5em; */
 }
 
@@ -23,7 +24,6 @@ span {
   flex-direction: column;
   justify-content: center;
   font-family: 'Source Sans Pro', sans-serif;
-  font-size: 75%;
   /* margin: 1.5em; */
 }
 
