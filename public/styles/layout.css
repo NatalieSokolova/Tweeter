@@ -34,9 +34,10 @@ main {
   margin: 0 5% 0;
  }
 
+/* appears on scroll and takes you to the top on click and enables text area*/
 button.scrollup-btn {
   color: red;
-  font-size: 100px;
+  font-size: 4em;
   background-color: Transparent;
   border: none;
   outline:none;
@@ -45,7 +46,6 @@ button.scrollup-btn {
   right: 30px;
   display: none;
   position: fixed;
-
 }
 
 button.scrollup-btn:hover {
