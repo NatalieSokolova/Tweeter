@@ -56,7 +56,8 @@ $(document).ready(function () {
 
   //shows/hides new tweeter form on click of red arrow in nav
   $(".nav-btn").on("click", () => {
-    $("form.tweets").slideToggle("slow")
+    $("form.tweets").slideToggle("slow");
+    $("#tweet-text").focus();
   })
 
   $('form').on('submit', (event) => {
