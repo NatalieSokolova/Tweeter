@@ -36,6 +36,7 @@ button[type="submit"] {
   background-color:  #4056A1;
   color: #FFFFFF;
   padding: 2px 6px 2px;
+  cursor: pointer;
 }
 
 /* form input field and border-bottom */
