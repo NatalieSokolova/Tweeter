@@ -64,11 +64,12 @@ $(document).ready(function () {
     const input = event.currentTarget[0].value;
 
     if (!input) {
-      alert('Sorry, you can not submit an empty tweet!')
+      $( "#empty-error" ).slideDown( "slow")
     } else if (input.length > 140) {
-      alert('Oops! Your tweet is too long. Maximum length is 140 characters')
+      $( "#long-error" ).slideDown( "slow")
     } else {
-
+      $( "#empty-error" ).hide( "slow")
+      $( "#long-error" ).hide( "slow")
       $.ajax({
         url: `http://localhost:8080/tweets`,
         method: 'POST',
