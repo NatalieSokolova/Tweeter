@@ -16,11 +16,11 @@ html {
 
 body {
   /* added padding so that nav doesn't clip top content */
-  padding-top: 120px; 
+  padding-top: 7.5rem; 
   color: #545149;
   background-color: #f4f1ec;
   font-family: "Source Sans Pro", sans-serif;
-  font-size: 24px;
+  font-size: 1.5rem;
 }
 
 /*
@@ -48,17 +48,15 @@ button.scrollup-btn {
   border: none;
   outline:none;
   cursor: pointer;
-  bottom: 20px;
-  right: 30px;
+  bottom: 3%;
+  right: 3%;
   display: none;
   position: fixed;
 }
 
 button.scrollup-btn:hover {
-  animation: bounce 2.5s infinite;
+  animation: bounce 1.5s infinite;
 }
-
-
 
 @keyframes bounce {
   /* beginning of animation */
@@ -68,6 +66,6 @@ button.scrollup-btn:hover {
      -webkit-transform: translateY(0);
   } 
   50% {
-      -webkit-transform: translateY(-30px);
+      -webkit-transform: translateY(-3%);
   }
 }

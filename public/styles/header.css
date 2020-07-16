@@ -2,10 +2,18 @@
 header.app-header {
   display: flex;
   width: 100%;
-  height: 400px;
+  height: 10%;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   background-color: #e1ad3e;
   background-image: url("../images/bg-color.png");
 }
+
+.profile-pic {
+  padding-top: 2em;
+}
+
+/* .user-name {
+  margin-bottom: 1.5em
+} */

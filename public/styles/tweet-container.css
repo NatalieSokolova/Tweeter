@@ -1,14 +1,18 @@
 article.new-tweet-container {
   border: 4px solid;
-  padding: 12px;
-  margin: 20px 0;
-  font-size: 24px;
+  padding: 1%;
+  margin: 3% 0;
+  font-size: 1em;
 }
 
 article.new-tweet-container:hover {
   box-shadow: 10px 10px #b3c0e1;
   font-weight: 700;
 } 
+
+article.new-tweet-container > p {
+  padding-top: 1.5%;
+}
 
 .tweet-handle {
   margin: .5em;
@@ -39,7 +43,7 @@ article.new-tweet-container:hover {
 }
 
 .new-tweet-container p {
-  margin: 30px 20px;
+  margin: 1% 1.5%;
 }
 
 footer {
@@ -51,12 +55,12 @@ footer {
 }
 
 .date {
-  margin: 10px 20px;
+  margin: 1% 1.5%;
 }
 
 /* tweeter icons in the bottor right corner */
 .icons {
-  margin: 10px 20px;
+  margin: 1% 1.5%;
   color: #4056A1;
 } 
 
@@ -64,9 +68,9 @@ footer {
 .new-tweet > p {
   border: 4px solid red;
   display: none;
-  padding: 6px;
+  padding: .6%;
   text-align: center;
   margin: 0;
-  font-size: 20px;
+  font-size: 1em;
   color: red;
 }
