@@ -35,6 +35,15 @@ const createTweetElement = (tweet) => {
 
 $(document).ready(function () {
 
+  //shows/hides new tweeter form on click of red arrow in nav
+$(".nav-btn").on("click", () => {
+  $("form.tweets").slideDown( "slow")
+})
+
+// $(".nav-btn").on("click", () => {
+//   $("form.tweets").hide( "slow")
+// })
+
   $('form').on('submit', (event) => {
 
     event.preventDefault();
