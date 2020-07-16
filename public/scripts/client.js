@@ -34,6 +34,25 @@ const createTweetElement = (tweet) => {
 
 
 $(document).ready(function () {
+  /* appears on scroll and takes you to the top on click and enables text area*/
+  // button.scrollup-btn
+  const btn = $('button.scrollup-btn')
+  $(window).scroll(function() {
+    if ($(window).scrollTop() > 300) {
+      btn.show();
+    } else {
+      btn.hide();
+    }
+  });
+
+  btn.on('click', function(event) {
+    event.preventDefault();
+    $('html, body').animate({scrollTop:0}, '300');
+    $("form.tweets").slideDown()
+    $("#tweet-text").focus();
+  });
+
+
 
   //shows/hides new tweeter form on click of red arrow in nav
   $(".nav-btn").on("click", () => {
