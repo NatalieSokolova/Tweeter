@@ -33,3 +33,33 @@ main {
   justify-content: center;
   margin: 0 5% 0;
  }
+
+button.scrollup-btn {
+  color: red;
+  font-size: 100px;
+  background-color: Transparent;
+  border: none;
+  outline:none;
+  cursor: pointer;
+  bottom: 20px;
+  right: 30px;
+  display: none;
+  position: fixed;
+
+}
+
+button.scrollup-btn:hover {
+  -webkit-animation: bounce 2.5s infinite;
+}
+
+@-webkit-keyframes bounce {
+  /* beginning of animation */
+  0%,  
+  /* end of animation */
+  100% {
+     -webkit-transform: translateY(0);
+  } 
+  50% {
+      -webkit-transform: translateY(-30px);
+  }
+}
