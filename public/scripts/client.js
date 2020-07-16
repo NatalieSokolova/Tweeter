@@ -60,12 +60,14 @@ $(document).ready(function () {
     $("#tweet-text").focus();
   })
 
-  $('form').on('submit', (event) => {
+
+  $('form.tweets').on('submit', (event) => {
 
     event.preventDefault();
   
     // user's input into the text field
-    const input = event.currentTarget[0].value;
+    const input = $('#tweet-text');
+    //event.currentTarget[0].value;
   
     // removes previous error msgs before validation
     $( "#empty-error" ).hide( "slow")
@@ -77,19 +79,23 @@ $(document).ready(function () {
     } else if (input.length > 140) {
       $( "#long-error" ).slideDown( "slow")
     } else {
+      const p = document.createElement('p');
+      p.appendChild(document.createTextNode(input.val()));
+      // const safeInput = $("<div>").text(input.val());
+      // console.log(safeInput.innerHTML)
+
       $.ajax({
         url: `http://localhost:8080/tweets`,
         method: 'POST',
-        data: $('form').serialize(),
+        data: { text: p.innerHTML }
       }).then(() => {
         loadTweets();
       }).catch((error) => console.log(error));
 
       // clears the form after submission
-      $('form').trigger('reset');
+      $('form.tweets').trigger('reset');
 
-      // ???
-      // $('.counter').trigger('reset');
+      // resets character count to 140
       $('.counter').text(140);
     }
     
@@ -100,7 +106,7 @@ $(document).ready(function () {
     $.ajax({
       url: `http://localhost:8080/tweets`,
       method: 'GET',
-      data: $('form').serialize(),
+      data: $('#tweet-text').serialize(),
     }).then((response) => {
       // console.log('response: ', response);
       renderTweets(response);
