@@ -71,6 +71,19 @@
   <!-- Page-specific (main) content here -->
   <main class="container">
     <section class="new-tweet">
+    <!-- Error Msgs -->
+      <p id="empty-error">
+        <i class="fa fa-exclamation-triangle" aria-hidden="true"></i>
+         Sorry, you can not submit an empty tweet! 
+        <i class="fa fa-exclamation-triangle" aria-hidden="true"></i>
+      </p>
+      <p id="long-error">
+        <i class="fa fa-exclamation-triangle" aria-hidden="true"></i>
+         Oops! Your tweet is too long. Maximum length is 140 characters 
+        <i class="fa fa-exclamation-triangle" aria-hidden="true"></i>
+      </p>
+
+      
       <!-- <h2>Compose Tweet</h2> -->
       <form class="tweets" action="/tweets/" method="POST">
         <!-- form input field and border-bottom -->
