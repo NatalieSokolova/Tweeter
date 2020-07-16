@@ -8,6 +8,7 @@ header.app-header {
   flex-direction: column;
   background-color: #e1ad3e;
   background-image: url("../images/bg-color.png");
+  color: white;
 }
 
 .profile-pic {

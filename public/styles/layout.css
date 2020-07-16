@@ -77,32 +77,24 @@ button.scrollup-btn:hover {
 /* MOBILE */
 @media only screen and (max-width: 767px) {
   body {
+    width: 100vw;
     overflow: auto;
-    padding-top: 4em;
+    padding-top: 3em;
   }
   nav {
     background-image: url(../images/bg-color.png);
     background-color: #e1ad3e;
     height: 8vh;
     padding: 1.5em 1.5em 0;
-  }
-  .logo {
     font-size: 1em;
-    /* padding: 1em; */
-    /* margin: 1.5em; */
   }
 
-  .header-msg {
-    font-size: 1em;
-    /* padding: 2em; */
-  }
 
   header.app-header {
     height: 34vh;
   }
   img.profile-pic {
-    height: 25vh;
-    padding: 0;
+    height: 20vh;
   }
 
 /* .user-name {
@@ -115,14 +107,48 @@ button.scrollup-btn:hover {
   margin: 0;
   font-size: 1.5em;
   /* font-weight: 300; */
-  color: white;
+  /* color: white; */
 }
 img.icon {
   height: 5vh;
 }
+.new-tweet-container p {
+  height: auto;
+}
+button.scrollup-btn {
+  bottom: 30%;
+}
  
 }
 
+@media only screen and (min-width: 768px) {
+  nav {
+    height: 10vh;
+    padding: 1em 1em 0;
+    font-size: 1em;
+    background-color: #e1ad3e;
+  }
+  .header-msg {
+    padding: .3em;
+    font-size: .8em;
+  }
+  button.scrollup-btn {
+    bottom: 30%;
+  }
+  .user-name > h2 {
+    font-size: 1.5em;
+    /* font-weight: 300; */
+    /* color: white; */
+  }
+  header.app-header {
+    height: 50vh;
+  }
+  body {
+    padding-top: 2em;
+    font-size: 2em;
+  }
+  
+}
 
 @media only screen and (min-width: 1024px) {
 

@@ -24,12 +24,12 @@ article.new-tweet-container > p {
   visibility: visible;
 } */
 
-/* .tw-header {
+.tw-header {
   margin: 5px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-} */
+}
 
 /* displays user icon and name next to each other */
 .user {
