@@ -66,19 +66,21 @@ $(document).ready(function () {
     event.preventDefault();
   
     // user's input into the text field
+    // const input = event.currentTarget[0].value;
     const input = $('#tweet-text');
-    //event.currentTarget[0].value;
   
     // removes previous error msgs before validation
     $( "#empty-error" ).hide( "slow")
     $( "#long-error" ).hide( "slow")
 
     //validate before submission
-    if (!input) {
+    if (!input.val()) {
+      console.log('input: ', input.val())
       $( "#empty-error" ).slideDown( "slow")
-    } else if (input.length > 140) {
+    } else if (input.val().length > 140) {
       $( "#long-error" ).slideDown( "slow")
     } else {
+      //AFTER
       const p = document.createElement('p');
       p.appendChild(document.createTextNode(input.val()));
       // const safeInput = $("<div>").text(input.val());
@@ -91,6 +93,24 @@ $(document).ready(function () {
       }).then(() => {
         loadTweets();
       }).catch((error) => console.log(error));
+
+      // BEFORE
+      // $.ajax({
+      //   url: `http://localhost:8080/tweets`,
+      //   method: 'POST',
+      //   data: $('form').serialize(),
+      // }).then(() => {
+      //   loadTweets();
+      // }).catch((error) => console.log(error));
+
+      // // clears the form after submission
+      // $('form').trigger('reset');
+
+      // // ???
+      // // $('.counter').trigger('reset');
+      // $('.counter').text(140);
+
+
 
       // clears the form after submission
       $('form.tweets').trigger('reset');
