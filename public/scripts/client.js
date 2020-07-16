@@ -87,6 +87,10 @@ $(document).ready(function () {
 
       // clears the form after submission
       $('form').trigger('reset');
+
+      // ???
+      // $('.counter').trigger('reset');
+      $('.counter').text(140);
     }
     
   })
@@ -103,5 +107,7 @@ $(document).ready(function () {
     }).catch((error) => console.log(error));
 
   }
+
+  loadTweets()
 
 })
