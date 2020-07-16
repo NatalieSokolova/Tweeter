@@ -1,3 +1,4 @@
+/* add class */
 form[name="tweets"]{
   display: flex;
   flex-grow: 1;
@@ -8,8 +9,8 @@ form[name="tweets"]{
 }
 
 /* FORM input field*/
+
 textarea[name="text"] {
-  margin-top: 10px;
   /* margin-bottom: 15px; */
   background-color: transparent;
   border: none;
@@ -39,6 +40,7 @@ button[type="submit"] {
 
 /* form input field and border-bottom */
 .top-content {
+  margin-top: 30px;
   border-bottom: 4px solid;
 }
 

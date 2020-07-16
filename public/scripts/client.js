@@ -1,12 +1,3 @@
-/*
- * Client-side JS logic goes here
- * jQuery is already loaded
- * Reminder: Use (and do all your DOM work in) jQuery's document ready function
- */
-
-// for demo purposes
-// const tweets = []
-
 const renderTweets = function (tweets) {
   // loops through tweets
   // calls createTweetElement for each tweet
@@ -16,14 +7,8 @@ const renderTweets = function (tweets) {
   tweets.reverse().forEach(tweet => $('#results').append(createTweetElement(tweet)))
 }
 
+// puts a new tweet in a new-tweet-container
 const createTweetElement = (tweet) => {
-
-  // const dateReadable = ${tweet.created_at}.toDateString();
-  // console.log(dateReadable)
-  // const dateReadable = (new Date(tweet.created_at)) => {
-
-  // }
-
   let $tweet = `
   <article class="new-tweet-container">
   <header class="tw-header">
@@ -44,32 +29,29 @@ const createTweetElement = (tweet) => {
   </footer>
 </article>
 `;
-
   return $tweet;
-
 }
 
 
 $(document).ready(function () {
+
   $('form').on('submit', (event) => {
+
     event.preventDefault();
-
-    console.log('event: ', event)
-
-    console.log('form', $('form'))
-
-    console.log('input: ', event.currentTarget[0].value)
+  
+    // user's input into the text field
+    const input = event.currentTarget[0].value;
+  
+    // removes previous error msgs before validation
+    $( "#empty-error" ).hide( "slow")
+    $( "#long-error" ).hide( "slow")
 
     //validate before submission
-    const input = event.currentTarget[0].value;
-
     if (!input) {
       $( "#empty-error" ).slideDown( "slow")
     } else if (input.length > 140) {
       $( "#long-error" ).slideDown( "slow")
     } else {
-      $( "#empty-error" ).hide( "slow")
-      $( "#long-error" ).hide( "slow")
       $.ajax({
         url: `http://localhost:8080/tweets`,
         method: 'POST',
@@ -78,9 +60,10 @@ $(document).ready(function () {
         loadTweets();
       }).catch((error) => console.log(error));
 
-
+      // clears the form after submission
       $('form').trigger('reset');
     }
+    
   })
 
   const loadTweets = function () {
@@ -90,16 +73,10 @@ $(document).ready(function () {
       method: 'GET',
       data: $('form').serialize(),
     }).then((response) => {
-      console.log('response: ', response);
+      // console.log('response: ', response);
       renderTweets(response);
     }).catch((error) => console.log(error));
 
   }
-
-  // renderTweets(tweets);
-
-  //loadTweets()
-
-  // console.log("READY!!");
 
 })

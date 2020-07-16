@@ -37,11 +37,11 @@ span {
   background-color: Transparent;
   border: none;
   outline:none;
+  cursor: pointer;
 }
 
 .nav-btn:hover {
   -webkit-animation: bounce 2.5s infinite;
-
 }
 
 @-webkit-keyframes bounce {
