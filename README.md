@@ -8,11 +8,11 @@ This app is responsive, and would look good on desktops and most mobile devices.
 
 ## Screenshots:
 
-1. !["Desktop version, cursor hovers over the first tweet."](https://github.com/NatalieSokolova/tweeter/blob/83967e888f0cbf04462823a43f5da86273a48dc9/docs/tweets.png?raw=true)
+1. !["Desktop version, cursor hovers over the first tweet."](https://github.com/NatalieSokolova/tweeter/blob/83967e888f0cbf04462823a43f5da86273a48dc9/docs/tweets.png?)
 
-2. !["Desktop version. User is trying to submit an empty tweet."](https://github.com/NatalieSokolova/tweeter/blob/83967e888f0cbf04462823a43f5da86273a48dc9/docs/Screen%20Shot%202020-07-16%20at%209.06.24%20PM%20(2).png?raw=true)
+2. !["Desktop version. User is trying to submit an empty tweet."](https://github.com/NatalieSokolova/tweeter/blob/83967e888f0cbf04462823a43f5da86273a48dc9/docs/Screen%20Shot%202020-07-16%20at%209.06.24%20PM%20(2).png?)
 
-3. !["Mobile version. The page is scrolled up, nav bar is fixed, back to the top button is showing"](https://github.com/NatalieSokolova/tweeter/blob/83967e888f0cbf04462823a43f5da86273a48dc9/docs/tweets-mobile.png?raw=true)
+3. !["Mobile version. The page is scrolled up, nav bar is fixed, back to the top button is showing"](https://github.com/NatalieSokolova/tweeter/blob/83967e888f0cbf04462823a43f5da86273a48dc9/docs/tweets-mobile.png?)
 
 ## Dependencies
 
