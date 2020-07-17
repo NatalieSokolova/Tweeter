@@ -3,11 +3,11 @@
 
 <head>
 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
   <!-- Meta Information -->
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tweeter - Home Page</title>
-  
+
   <!-- External CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
     type="text/css" />
@@ -60,62 +60,62 @@
     <span class="logo">tweeter</span>
     <span class="header-msg">
       <div><b>Write</b> a new tweet</div>
-        <button class="nav-btn"><i class="fa fa-angle-double-down fa-2x" aria-hidden="true"></i></button>
+      <button class="nav-btn"><i class="fa fa-angle-double-down fa-2x" aria-hidden="true"></i></button>
     </span>
   </nav>
 
   <!-- Header -->
-  <div class="user-side"><header class="app-header">
-    <div>
-      <img class="profile-pic" src="/images/profile-hex.png">
-    </div>
-    <br>
-    <div class="user-name">
-      <h2><b>Your</b> Name</h2>
-    </div>
-  </header>
-</div>
+  <div class="user-side">
+    <header class="app-header">
+      <div>
+        <img class="profile-pic" src="/images/profile-hex.png">
+      </div>
+      <br>
+      <div class="user-name">
+        <h2>Fabulous Monkey</h2>
+      </div>
+    </header>
+  </div>
 
   <!-- Page-specific (main) content here -->
   <div class="tweeter-side">
-  <main class="container">
-    <section class="new-tweet">
-    <!-- Error Msgs -->
-      <p id="empty-error">
-        <i class="fa fa-exclamation-triangle" aria-hidden="true"></i>
-         Sorry, you can not submit an empty tweet! 
-        <i class="fa fa-exclamation-triangle" aria-hidden="true"></i>
-      </p>
-      <p id="long-error">
-        <i class="fa fa-exclamation-triangle" aria-hidden="true"></i>
-         Oops! Your tweet is too long. Maximum length is 140 characters 
-        <i class="fa fa-exclamation-triangle" aria-hidden="true"></i>
-      </p>
+    <main class="container">
+      <section class="new-tweet">
+        <!-- Error Msgs -->
+        <p id="empty-error">
+          <i class="fa fa-exclamation-triangle" aria-hidden="true"></i>
+          Sorry, you can not submit an empty tweet!
+          <i class="fa fa-exclamation-triangle" aria-hidden="true"></i>
+        </p>
+        <p id="long-error">
+          <i class="fa fa-exclamation-triangle" aria-hidden="true"></i>
+          Oops! Your tweet is too long. Maximum length is 140 characters
+          <i class="fa fa-exclamation-triangle" aria-hidden="true"></i>
+        </p>
 
-      
-      <!-- <h2>Compose Tweet</h2> -->
-      <form class="tweets" action="/tweets/" method="POST">
-        <!-- form input field and border-bottom -->
-        <section class="top-content">
-          <textarea name="text" id="tweet-text" placeholder="What are you humming about?"></textarea>
-        </section>
-        <!-- /* button and count */ -->
-        <section class="bottom-content">
-          <button type="submit">Tweet</button>
-          <output name="counter" class="counter" for="tweet-text">140</output>
-        </section>
-      </form>
+        <!-- <h2>Compose Tweet</h2> -->
+        <form class="tweets" action="/tweets/" method="POST">
+          <!-- form input field and border-bottom -->
+          <section class="top-content">
+            <textarea name="text" id="tweet-text" placeholder="What are you humming about?"></textarea>
+          </section>
+          <!-- button and count -->
+          <section class="bottom-content">
+            <button type="submit">Tweet</button>
+            <output name="counter" class="counter" for="tweet-text">140</output>
+          </section>
+        </form>
 
-      <!-- tweet markup -->
+        <!-- tweet markup -->
 
-      <div id="results"></div>
+        <div id="results"></div>
 
-    </section>
-    
-    <button class="scrollup-btn"><i class="fa fa-arrow-circle-up" aria-hidden="true"></i></button>
+      </section>
 
-  </main>
-</div>
+      <button class="scrollup-btn"><i class="fa fa-arrow-circle-up" aria-hidden="true"></i></button>
+
+    </main>
+  </div>
 </body>
 
 </html>

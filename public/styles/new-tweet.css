@@ -1,15 +1,9 @@
-/* add class */
 form.tweets {
-  /* display: flex;
-  flex-grow: 1;
-  flex-direction: column; */
   width: 100%;
-  /* padding: 3%; */
   margin: 5% 0;
 }
 
 /* FORM input field*/
-
 textarea[name="text"] {
   margin-bottom: 1em;
   background-color: transparent;
@@ -18,7 +12,6 @@ textarea[name="text"] {
   height: 1.5em;
   outline: none;
   resize: none;
-  /* font-size: .25em; */
 }
 
 /* overriding placeholder text styles inherited from form input field*/
@@ -43,7 +36,6 @@ button[type="submit"] {
 
 /* form input field and border-bottom */
 .top-content {
-  /* margin-top: 3em; */
   border-bottom: .2em solid;
 }
 
@@ -56,13 +48,6 @@ button[type="submit"] {
   font-family: 'Bungee', cursive;
   font-size: .8em;
 }
-
-/* label[for="tweet-text"] {
-  font-weight: 700;
-  margin-top: 30px;
-  display:inline-block;
-  font-size: 24px;
-} */
 
 /* turns counter red, after character count exceeds 140 */
 .red {

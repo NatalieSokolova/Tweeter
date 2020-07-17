@@ -1,8 +1,3 @@
-/*
- * http://www.paulirish.com/2012/box-sizing-border-box-ftw/
- * https://css-tricks.com/international-box-sizing-awareness-day/
- * Do not modify these two selectors, please
- */
 html {
   box-sizing: border-box;
 }
@@ -10,22 +5,11 @@ html {
   box-sizing: inherit;
 }
 
-/*
- * Global layout stuff
- */
-
 body {
-  /* added padding so that nav doesn't clip top content */
-
   color: #545149;
   background-color: #f4f1ec;
   font-family: "Source Sans Pro", sans-serif;
-  /* font-size: 1.5rem; */
 }
-
-/*
- * Additional CSS can be defined below or in other CSS files, as per instructions
- */
 
 main {
   background-color: #f4f1ec;
@@ -44,7 +28,6 @@ button.scrollup-btn {
   background-color: red; 
 
   text-align: center;
-  /* background-color: Transparent; */
   border: none;
   outline:none;
   cursor: pointer;
@@ -58,10 +41,9 @@ button.scrollup-btn:hover {
   animation: bounce 1.5s infinite;
 }
 
+/* animates buttons */
 @keyframes bounce {
-  /* beginning of animation */
   0%,  
-  /* end of animation */
   100% {
      -webkit-transform: translateY(0);
   } 
@@ -81,6 +63,7 @@ button.scrollup-btn:hover {
     overflow: auto;
     padding-top: 3em;
   }
+
   nav {
     background-image: url(../images/bg-color.png);
     background-color: #e1ad3e;
@@ -89,7 +72,6 @@ button.scrollup-btn:hover {
     font-size: 1em;
   }
 
-
   header.app-header {
     height: 34vh;
   }
@@ -97,52 +79,57 @@ button.scrollup-btn:hover {
     height: 20vh;
   }
 
-/* .user-name {
-  font-size: 1em;
-  margin-bottom: 1vh;
-  color: white;
-} */
 .user-name > h2 {
   padding: 0;
   margin: 0;
   font-size: 1.5em;
-  /* font-weight: 300; */
-  /* color: white; */
+  font-weight: 300;
 }
+
 img.icon {
   height: 5vh;
 }
+
 .new-tweet-container p {
   height: auto;
 }
+
 button.scrollup-btn {
   bottom: 30%;
 }
  
 }
 
+/* iPad */
 @media only screen and (min-width: 768px) {
+  body {
+    padding-top: 4em;
+  }
   nav {
-    height: 10vh;
+    height: 13vh;
     padding: 1em 1em 0;
     font-size: 1em;
     background-color: #e1ad3e;
+    background-image: url(../images/bg-color.png);
   }
   .header-msg {
     padding: .3em;
     font-size: .8em;
   }
+
   button.scrollup-btn {
     bottom: 30%;
   }
+
   .user-name > h2 {
     font-size: 1.5em;
-    /* font-weight: 300; */
-    /* color: white; */
+    font-weight: 300;
   }
+ 
   header.app-header {
-    height: 50vh;
+    height: 60vh;
   }
+
   body {
     padding-top: 2em;
     font-size: 2em;
@@ -150,26 +137,28 @@ button.scrollup-btn {
   
 }
 
+/* DESKTOP */
 @media only screen and (min-width: 1024px) {
 
   nav {
+    background-image: none;
     background-color:  #4056A1;
     height: 10vh;
     padding: 1.75em .75em;
   }
+
   body {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     padding-top: 5em; 
   }
-  header.app-header {
-    height: 60vh;
-  }
+  
   .user-side {
     width: 35%;
     margin: 3%;
   }
+
   .tweeter-side{
     width: 50%;
   }
@@ -177,4 +166,5 @@ button.scrollup-btn {
   button.scrollup-btn {
     bottom: 3%;
   }
+
 }

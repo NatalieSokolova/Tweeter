@@ -3,19 +3,14 @@ nav {
   display: flex;
   width: 100vw;
   justify-content: space-between;
-  /* background-color: #4056A1; */
   color: #FFFFFF;
-  /* height: 15vh; */
   position: fixed;
   top: 0;
-  /* padding: 2.5em 1.5em; */
  }
 
 /* Tweeter logo */
 .logo {
   font-family: 'Bungee', cursive;
-  /* font-size: 1em; */
-  /* margin: 1.5em; */
 }
 
 /* msg that shows up on the right in nav */
@@ -24,7 +19,6 @@ nav {
   flex-direction: column;
   justify-content: center;
   font-family: 'Source Sans Pro', sans-serif;
-  /* margin: 1.5em; */
 }
 
 /* arrow below the .header-msg */
@@ -40,21 +34,8 @@ button.nav-btn {
 }
 
 button.nav-btn:hover {
-  /* -webkit-animation: bounce 2.5s infinite; */
   animation: bounce 1.5s infinite;
 }
-
-/* @-webkit-keyframes bounce {
-  
-  0%,  
- 
-  100% {
-     -webkit-transform: translateY(0);
-  } 
-  50% {
-      -webkit-transform: translateY(-12px);
-  }
-} */
 
 @keyframes bounce {
   
