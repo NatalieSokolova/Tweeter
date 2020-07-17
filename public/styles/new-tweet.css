@@ -43,7 +43,7 @@ button[type="submit"] {
 
 /* form input field and border-bottom */
 .top-content {
-  margin-top: 3em;
+  /* margin-top: 3em; */
   border-bottom: .2em solid;
 }
 

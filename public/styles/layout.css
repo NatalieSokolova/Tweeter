@@ -16,7 +16,7 @@ html {
 
 body {
   /* added padding so that nav doesn't clip top content */
-  /* padding-top: 7.5rem;  */
+
   color: #545149;
   background-color: #f4f1ec;
   font-family: "Source Sans Pro", sans-serif;
@@ -152,5 +152,29 @@ button.scrollup-btn {
 
 @media only screen and (min-width: 1024px) {
 
- 
+  nav {
+    background-color:  #4056A1;
+    height: 10vh;
+    padding: 1.75em .75em;
+  }
+  body {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-top: 5em; 
+  }
+  header.app-header {
+    height: 60vh;
+  }
+  .user-side {
+    width: 35%;
+    margin: 3%;
+  }
+  .tweeter-side{
+    width: 50%;
+  }
+
+  button.scrollup-btn {
+    bottom: 3%;
+  }
 }
