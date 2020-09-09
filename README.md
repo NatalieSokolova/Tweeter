@@ -14,6 +14,13 @@ This app is responsive, and would look good on desktops and most mobile devices.
 
 3. !["Mobile version. The page is scrolled up, nav bar is fixed, back to the top button is showing"](https://github.com/NatalieSokolova/tweeter/blob/master/docs/tweets-mobile.png?raw=true)
 
+## Getting Started
+
+Fork this repository, then clone your fork of this repository.
+Install dependencies using the npm install command.
+Start the web server using the npm run local command. The app will be served at http://localhost:8080/.
+Go to http://localhost:8080/ in your browser.
+
 ## Dependencies
 
 - Express
