@@ -2,7 +2,9 @@
 
 Tweeter is a simple, single-page Twitter clone.
 
-Basides basic functional requirements, I changed the appearance of cursor on hover over the tweeter button, added a "back to the top button" that automatically activates input field, and another button that toggles the input form. Both of these buttons are animated. For desktop version, "back to the top button" is placed on the bottom, however, for mobile - it is placed in the middle on the right side, to make it more convenient for the user to click it.
+A user can post a tweet under 140 characters. 
+
+Basides basic functional requirements, there is a "back to the top button" that automatically activates input field, and another button that toggles the input form. Both of of them are animated. For desktop version, "back to the top button" is placed on the bottom, however, for mobile - it is placed in the middle on the right side, to make it more convenient for the user to click it.
 
 This app is responsive, and would look good on desktops and most mobile devices.
 
@@ -25,3 +27,5 @@ This app is responsive, and would look good on desktops and most mobile devices.
 
 - Express
 - Node 5.10.x or above
+- jQuery
+- AJAX
